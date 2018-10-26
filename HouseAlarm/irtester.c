@@ -3,12 +3,12 @@
 #include <time.h>
 int main(int argc, char *argv[])
 {
-   time_t time1;
+  time_t time1;
   time_t time2;
   int i;
   wiringPiSetup () ;
   pinMode(1,OUTPUT);
-  pinMode(0, INPUT);
+  pinMode(0,INPUT);
   pinMode(2,OUTPUT);
   pinMode(3,INPUT);
   pinMode(4,OUTPUT);
@@ -48,7 +48,7 @@ while(time1-t1>=10){
 
 };
    // printf("Waiting for event\n");
-    if(digitalRead(0) == 1&&time2-t2<=10){
+if(digitalRead(0) == 1&&time2-t2<=10){
 if(x==0){
 break;
 }
