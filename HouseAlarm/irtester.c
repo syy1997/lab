@@ -58,7 +58,7 @@ break;
 else{
  while(time2-t2>=10)
 {
-ifttt();
+//ifttt();
 digitalWrite(1,HIGH);
 digitalWrite(2,HIGH);
 delay(2000);
