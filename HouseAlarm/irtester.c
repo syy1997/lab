@@ -58,7 +58,7 @@ break;
 else{
  while(time2-t2>=10)
 {
-/*ifttt();*/
+ifttt("https://maker.ifttt.com/trigger/alarm_triggered/with/key/56-YpOKO17vOh-");
 digitalWrite(1,HIGH);
 digitalWrite(2,HIGH);
 delay(2000);
