@@ -25,7 +25,7 @@ digitalWrite(4,LOW);
 
 
 }
-else{
+
    digitalWrite(4,LOW);
     time1 = time(NULL);
     int t1 = time1;
@@ -35,7 +35,7 @@ digitalWrite(1,LOW);
 delay(200);
 digitalWrite(1,HIGH);
 }
-//alarm armed
+/*alarm armed*/
 while(time1-t1>=10){
     digitalWrite(2,HIGH);
     digitalWrite(1,LOW);
@@ -58,7 +58,7 @@ break;
 else{
  while(time2-t2>=10)
 {
-//ifttt();
+/*ifttt();*/
 digitalWrite(1,HIGH);
 digitalWrite(2,HIGH);
 delay(2000);
@@ -69,11 +69,11 @@ break;
 }
 
 }
-   // printf("Alarm\n");
+   /* printf("Alarm\n");*/
 break;
 }
 }
-  }
+  
 x=1;
 }
 
