@@ -42,19 +42,19 @@ while(time1-t1>=10){
     digitalWrite(4,LOW);
  time2 = time(NULL);
  int t2 = time2;
-   // printf("Waiting for reset\n");
+   /* printf("Waiting for reset\n");*/
     if(x==0){
    break;
 
-};
-   // printf("Waiting for event\n");
+}
+   /*printf("Waiting for event\n");*/
 if(digitalRead(0) == 1&&time2-t2<=10){
 if(x==0){
 break;
 }
 
 
-};
+}
 else{
  while(time2-t2>=10)
 {
