@@ -3,6 +3,12 @@ CFLAGS=-lWarn -pedantic
 
 tester: tester.o libmyifttt.a
 	cc tester.o -L. -lmyifttt -lcurl -o tester
+	
+output:irtester.o libmyifttt.a
+        $(CC) irtester.o -L. -lwiringPi -lmyifttt -lcurl -o irtester
+
+irtester.o: irtester.c
+        $(CC) $(CFLAGS) -c ansi $<
 
 irtester: irtester.o 
 	cc irtester.o -lwiringPi -o irtester
