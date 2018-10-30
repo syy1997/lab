@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <wiringPi.h>
 #include <time.h>
-#include <ifttt.h>
+
 int main(int argc, char *argv[])
 {
   
