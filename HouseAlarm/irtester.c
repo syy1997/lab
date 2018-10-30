@@ -3,8 +3,7 @@
 #include <time.h>
 int main(int argc, char *argv[])
 {
-  time_t time1;
-  time_t time2;
+  
   int i;
   wiringPiSetup () ;
   pinMode(1,OUTPUT);
@@ -27,28 +26,28 @@ digitalWrite(4,LOW);
 }
 
    digitalWrite(4,LOW);
-    time1 = (double)time(NULL);
-    double t1 = time1;
+    double t1 = (double)time(NULL);
+   
     x=1;
-    while(time1-t1<=1){
+    while((double)time(NULL)-t1<=1){
 digitalWrite(1,LOW);
 delay(200);
 digitalWrite(1,HIGH);
 }
 /*alarm armed*/
-while(time1-t1>=10){
+while((double)time(NULL)-t1>=10){
     digitalWrite(2,HIGH);
     digitalWrite(1,LOW);
     digitalWrite(4,LOW);
- time2 = (double)time(NULL);
- double t2 = time2;
+ double t2 = (double)time(NULL);
+
    /* printf("Waiting for reset\n");*/
     if(x==0){
    break;
 
 }
    /*printf("Waiting for event\n");*/
-if(digitalRead(0) == 1&&time2-t2<=10){
+if(digitalRead(0) == 1&&(double)time(NULL)-t2<=10){
 if(x==0){
 break;
 }
@@ -56,7 +55,7 @@ break;
 
 }
 else{
- while(time2-t2>=10)
+ while((double)time(NULL)-t2>=10)
 {
 ifttt("https://maker.ifttt.com/trigger/alarm_triggered/with/key/56-YpOKO17vOh-");
 digitalWrite(1,HIGH);
