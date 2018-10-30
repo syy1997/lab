@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <wiringPi.h>
 #include <time.h>
+#include <ifttt.h>
 int main(int argc, char *argv[])
 {
   
-  int i;
+  
   double t1 = (double)time(NULL);
   wiringPiSetup () ;
   pinMode(1,OUTPUT);
