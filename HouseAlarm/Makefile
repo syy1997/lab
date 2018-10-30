@@ -7,7 +7,7 @@ tester: tester.o libmyifttt.a
 output:irtester.o libmyifttt.a
         $(CC) irtester.o -L. -lwiringPi -lmyifttt -lcurl -o irtester
 
-irtester.o: irtester.c
+irtester.o: irtester.c ifttt.h
         $(CC) $(CFLAGS) -c ansi $<
 
 irtester: irtester.o 
