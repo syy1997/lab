@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
   pinMode(3,INPUT);
   pinMode(4,OUTPUT);
 pullUpDnControl(3, PUD_UP) ; 
-
+double t1 = (double)time(NULL);
 
   while(1) {
 
@@ -26,7 +26,7 @@ digitalWrite(4,LOW);
 }
 
    digitalWrite(4,LOW);
-    double t1 = (double)time(NULL);
+    
    
     x=1;
     while((double)time(NULL)-t1<=1){
@@ -36,10 +36,11 @@ digitalWrite(1,HIGH);
 }
 /*alarm armed*/
 while((double)time(NULL)-t1>=10){
+  double t2 = (double)time(NULL);
     digitalWrite(2,HIGH);
     digitalWrite(1,LOW);
     digitalWrite(4,LOW);
- double t2 = (double)time(NULL);
+
 
    /* printf("Waiting for reset\n");*/
     if(x==0){
