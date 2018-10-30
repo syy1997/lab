@@ -28,7 +28,7 @@ digitalWrite(4,LOW);
 
    digitalWrite(4,LOW);
     time1 = time(NULL);
-    time t1 = time1;
+    time_t t1 = time1;
     x=1;
     while(time1-t1<=1){
 digitalWrite(1,LOW);
@@ -41,7 +41,7 @@ while(time1-t1>=10){
     digitalWrite(1,LOW);
     digitalWrite(4,LOW);
  time2 = time(NULL);
- time t2 = time2;
+ time_t t2 = time2;
    /* printf("Waiting for reset\n");*/
     if(x==0){
    break;
