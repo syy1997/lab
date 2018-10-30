@@ -5,6 +5,7 @@ int main(int argc, char *argv[])
 {
   
   int i;
+  double t1 = (double)time(NULL);
   wiringPiSetup () ;
   pinMode(1,OUTPUT);
   pinMode(0,INPUT);
@@ -12,7 +13,7 @@ int main(int argc, char *argv[])
   pinMode(3,INPUT);
   pinMode(4,OUTPUT);
 pullUpDnControl(3, PUD_UP) ; 
-double t1 = (double)time(NULL);
+
 
   while(1) {
 
