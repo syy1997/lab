@@ -60,7 +60,7 @@ break;
 else{
  while((double)time(NULL)-t2>=10)
 {
-ifttt("https://maker.ifttt.com/trigger/alarm_triggered/with/key/56-YpOKO17vOh-");
+ifttt("https://maker.ifttt.com/trigger/alarm_triggered/with/key/doiyELHkyIVDVYX5-BEg1Y");
 digitalWrite(1,HIGH);
 digitalWrite(2,HIGH);
 delay(2000);
