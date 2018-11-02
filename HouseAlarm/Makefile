@@ -31,4 +31,4 @@ tester.o:	tester.c ifttt.h
 all:	tester output
 
 clean:
-	rm tester irtester *.o
+	rm tester *.o
