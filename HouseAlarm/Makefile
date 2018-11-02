@@ -28,7 +28,7 @@ ifttt.o: 	ifttt.c ifttt.h
 tester.o:	tester.c ifttt.h
 	$(CC) $(CFLAGS) -c -ansi $<
 
-all:	tester irtester blink button
+all:	tester output
 
 clean:
 	rm tester irtester *.o
